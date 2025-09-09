@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Extension Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head> 
+<body>
+   <div class="container">
+      <div class="extension">
+        <img src="./logo.svg" alt="" class="mage">
+        <span><img src="./icon-sun.svg" alt="" class="sun" id="sun"></span>
+      </div>
+
+      <div class="list">
+        <h1>Extension List</h1>
+        <div class="buttons">
+        <button class="all gbogbo">All</button>
+        <button class="all on" id="active">Active</button>
+        <button class="all off" id="inactive">Inactive</button>
+        </div>
+       </div>
+
+      <div class="boxes">
+        <div class="box box1">
+            <div class="text">
+                <img src="./logo-devlens.svg" alt="">
+                <span>
+                    <h1>DevLens</h1>
+                    <p>Quickly inspect page layouts and visualize element boundaries.</p>
+                </span>
+            </div>
+            <div class="switch">
+                <button class="remove">Remove</button>
+               
+                <div class="toggle">
+                    <input type="checkbox" class="check check1" id="check check1">
+                    <label for="check check1" class="cone cone1"></label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="box box2">
+            <div class="text">
+                <img src="./logo-style-spy.svg" alt="">
+                <span>
+                    <h1> StyleSpy</h1>
+                    <p> Instantly analyze and copy CSS from any webpage element.</p>
+                </span>
+            </div>
+            <div class="switch">
+                <button class="remove" id="remove">Remove</button>
+               
+                <div class="toggle">
+                    <input type="checkbox" class="check check2" id="check check2">
+                    <label for="check check2" class="cone cone2"></label>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="box box3">
+            <div class="text">
+                <img src="./logo-speed-boost.svg" alt="">
+                <span>
+                    <h1>SpeedBoost</h1>
+                    <p>Optimizes browser resource usage to accelerate page loading.</p>
+                </span>
+            </div>
+            <div class="switch">
+                <button class="remove">Remove</button>
+               
+                <div class="toggle">
+                    <input type="checkbox" class="check check3" id="check check3">
+                    <label for="check check3" class="cone cone3"></label>
+                </div>
+
+            </div>
+        </div>
+       
+
+         <div class="box box4">
+            <div class="text">
+                <img src="./logo-json-wizard.svg" alt="">
+                <span>
+                    <h1>JSONWizard</h1>
+                    <p>Formats, validates, and prettifies JSON responses in-browser.</p>
+                </span>
+            </div>
+            <div class="switch">
+                <button class="remove">Remove</button>
+               
+                <div class="toggle">
+                    <input type="checkbox" class="check check4" id="check check4">
+                    <label for="check check4" class="cone cone4"></label>
+                </div>
+
+            </div>
+        </div>
+       
+
+          <div class="box box5">
+            <div class="text">
+                <img src="./logo-tab-master-pro.svg" alt="">
+                <span>
+                    <h1>TabMaster Pro</h1>
+                    <p>  Organizes browser tabs into groups and sessions.</p>
+                </span>
+            </div>
+            <div class="switch">
+                <button class="remove">Remove</button>
+               
+                <div class="toggle">
+                    <input type="checkbox" class="check check5" id="check check5">
+                    <label for="check check5" class="cone cone5"></label>
+                </div>
+
+            </div>
+          </div>
+       
+
+         <div class="box box6">
+            <div class="text">
+                <img src="./logo-viewport-buddy.svg" alt="">
+                <span>
+                    <h1>  ViewportBuddy</h1>
+                    <p> Simulates various screen resolutions directly within the browser.</p>
+                </span>
+            </div>
+            <div class="switch">
+                <button class="remove">Remove</button>
+               
+                <div class="toggle">
+                    <input type="checkbox" class="check check6" id="check check6">
+                    <label for="check check6" class="cone cone6"></label>
+                </div>
+
+            </div>
+        </div>
+       
+
+         <div class="box box7">
+            <div class="text">
+                <img src="./logo-markup-notes.svg" alt="">
+                <span>
+                    <h1>Markup Notes</h1>
+                    <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+                </span>
+            </div>
+            <div class="switch">
+                <button class="remove">Remove</button>
+               
+                <div class="toggle">
+                    <input type="checkbox" class="check check7" id="check check7">
+                    <label for="check check7" class="cone cone7"></label>
+                </div>
+
+            </div>
+        </div>
+       
+
+         <div class="box box8">
+            <div class="text">
+                <img src="./logo-grid-guides.svg" alt="">
+                <span>
+                    <h1>  GridGuides</h1>
+                    <p> Overlay customizable grids and alignment guides on any webpage.</p>
+                </span>
+            </div>
+            <div class="switch">
+                <button class="remove">Remove</button>
+               
+                <div class="toggle">
+                    <input type="checkbox" class="check check8" id="check check8">
+                    <label for="check check8" class="cone cone8"></label>
+                </div>
+
+            </div>
+        </div>
+       
+
+         <div class="box box9">
+            <div class="text">
+                <img src="./logo-palette-picker.svg" alt="">
+                <span>
+                    <h1>Palette Picker</h1>
+                    <p> Instantly extracts color palettes from any webpage.</p>
+                </span>
+            </div>
+            <div class="switch">
+                <button class="remove">Remove</button>
+               
+                <div class="toggle">
+                    <input type="checkbox" class="check check9" id="check check9">
+                    <label for="check check9" class="cone cone9"></label>
+                </div>
+
+            </div>
+        </div>
+
+
+         <div class="box box10">
+            <div class="text">
+                <img src="./logo-link-checker.svg" alt="">
+                <span>
+                    <h1>LinkChecker</h1>
+                    <p>Scans and highlights broken links on any page.</p>
+                </span>
+            </div>
+            <div class="switch">
+                <button class="remove">Remove</button>
+               
+                <div class="toggle">
+                    <input type="checkbox" class="check check10" id="check check10">
+                    <label for="check check10" class="cone cone10"></label>
+                </div>
+
+            </div>
+        </div>
+       
+
+
+         <div class="box box11">
+            <div class="text">
+                <img src="./logo-dom-snapshot.svg" alt="">
+                <span>
+                    <h1> DOM Snapshot</h1>
+                    <p>  Capture and export DOM structures quickly.</p>
+                </span>
+            </div>
+            <div class="switch">
+                <button class="remove">Remove</button>
+               
+                <div class="toggle">
+                    <input type="checkbox" class="check check11" id="check check11">
+                    <label for="check check11" class="cone cone11"></label>
+                </div>
+
+            </div>
+        </div>
+       
+
+
+         <div class="box box12">
+            <div class="text">
+                <img src="./logo-console-plus.svg" alt="">
+                <span>
+                    <h1>ConsolePlus</h1>
+                    <p> Enhanced developer console with advanced filtering and logging.</p>
+                </span>
+            </div>
+            <div class="switch">
+                <button class="remove">Remove</button>
+               
+                <div class="toggle">
+                    <input type="checkbox" class="check check12" id="check check12">
+                    <label for="check check12" class="cone cone12"></label>
+                </div>
+
+            </div>
+        </div>
+       
+   
+
+      </div>
+
+    </div>
+
+
+ 
+ 
+ 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="./index.js" charset="UTF-8"></script>
+</body>
+</html>

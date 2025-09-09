@@ -1,0 +1,1075 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(180deg, var(--1st--color) 0%, var(--2nd--color) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "noto sans", geneva;
+
+}
+
+
+  :root {
+    --1st--color: #040918;
+    --2nd--color: #091540 ;
+    --3rd--color: hsl(226, 25%, 17%);
+    --4th--color: hsl(226, 11%, 37%);
+    --5th--color: hsl(200, 60%, 99%);
+    --6th--color: hsl(225, 23%, 24%);
+    --7th--color: hsl(3, 77%, 44%);
+    --8th--color: hsl(3, 86%, 64%);
+
+ }
+
+ .light-theme {
+     --1st--color: #EBF2FC;
+    --2nd--color: #EEF8F9 ;
+    --3rd--color: hsl(200, 60%, 99%);
+    --4th--color: hsl(0, 0%, 78%);
+    --5th--color:hsl(226, 11%, 37%);
+    --6th--color: hsl(217, 61%, 90%);
+    --7th--color: hsl(3, 77%, 44%);
+    --8th--color: hsl(3, 86%, 64%);
+
+ }
+ 
+
+
+.container {
+    margin: 3% auto;
+    padding: 20px;
+    background-color: whte;
+}
+
+.extension {
+    width: 65vw;
+    background-color: var(--3rd--color);
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.extension span {
+   padding: 10px 12px;
+   text-align: center;
+   background-color: var(--4th--color);
+   border-radius: 12px;
+}
+
+.extension .mage {
+   filter: contrast(250%);
+}
+
+.extension .sun {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.list {
+    margin: 0 auto;
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.list h1 {
+    color: var(--5th--color);
+    font-size: 2rem;
+}
+.buttons button{
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    background-color:var(--6th--color);
+    color: var(--5th--color);
+    transition: 0.2s;
+    border: 1px solid var(--4th--color);
+    cursor: pointer;
+    font-size: 17px;
+    }
+
+
+        .all:hover {
+            border: 1px solid var(--7th--color);
+        }
+
+
+    .all.active {
+        background-color:var(--7th--color);
+    }
+
+    .boxes {
+        width: 65vw;
+        margin:0 auto;
+        background-color: alicelue;
+        padding:  0.5%;
+        display: grid;
+        grid-template-columns: 21.5vw 21.5vw 21.5vw;
+        grid-template-rows: 200px 200px 200px 200px;
+        gap: 10px;
+       
+    }
+
+    .box {
+        background-color: var(--3rd--color);
+        border-radius: 20px;
+        border: 1px solid var(--4th--color);
+        display: flex;
+        flex-direction: column;
+        gap: 38%;
+        padding:0 20px;
+    }
+
+    .text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        gap: 5%
+    }
+
+    .text img {
+        width: 40px;
+    }
+
+    .text h1 {
+        font-size: 1.3rem;
+        color: var(--5th--color);
+        margin-bottom: 5px;
+    }
+
+    .text p {
+      font-size:13px ;
+      color: var(--5th--color);
+      margin: 0;
+    }
+
+    .switch {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 230px;
+    }
+
+    .switch button {
+        outline: none;
+        border: 1px solid var(--4th--color);
+        padding: 7px 12px;
+        background-color: transparent;
+        border-radius: 30px;
+        color:var(--5th--color);
+        font-size: 10px;
+        cursor: pointer;
+    }
+
+     .switch button:hover {
+        background-color: var(--7th--color);
+     }
+
+    
+     .box7 .text p {
+        font-size: 12px;
+       }
+
+
+   .box7 {
+  gap: 38%;
+  }   
+
+  .box11 {
+    gap: 46%;
+
+  }
+
+  
+  .box10 {
+    gap: 38%;
+
+  }
+
+  .cone {
+    cursor: pointer;
+  }
+
+  .remove {
+    cursor: pointer;
+  }
+
+
+    .cone1 {
+        width: 23px;
+        height: 12px;
+        background-color:var(--4th--color);
+        border-radius: 30px;
+        margin: 0;
+        position: absolute;
+        display: inline-block;
+        padding: 1px;
+     
+        transition: .2s;
+    }
+
+    .cone1::before {
+        content:'';
+        width: 10px;
+        height: 10px;
+        border-radius: 200px;
+        position: absolute;
+        background-color:var(--5th--color);
+        margin: 1px;
+        transition: .2s;
+    }
+
+    .check1:checked + .cone1::before {
+          transform: translateX(11px);
+    }
+
+
+    .check1:checked + .cone1 {
+        background-color: var(--8th--color);
+    }
+
+    .check {
+        display: none;
+    }
+
+
+
+/*******sec bx********/
+
+.cone2 {
+        width: 23px;
+        height: 12px;
+        background-color: var(--4th--color);
+        border-radius: 30px;
+        margin: 0;
+        position: absolute;
+        display: inline-block;
+        padding: 1px;
+     
+        transition: .2s;
+    }
+
+    .cone2::before {
+        content:'';
+        width: 10px;
+        height: 10px;
+        border-radius: 200px;
+        position: absolute;
+        background-color:var(--5th--color) ;
+        margin: 1px;
+        transition: .2s;
+    }
+
+    .check2:checked + .cone2::before {
+          transform: translateX(11px);
+    }
+
+
+    .check2:checked + .cone2 {
+        background-color: var(--8th--color);
+    }
+
+
+    /*******3rd bx********/
+
+    .cone3 {
+        width: 23px;
+        height: 12px;
+        background-color: var(--4th--color);
+        border-radius: 30px;
+        margin: 0;
+        position: absolute;
+        display: inline-block;
+        padding: 1px;
+     
+        transition: .2s;
+    }
+
+    .cone3::before {
+        content:'';
+        width: 10px;
+        height: 10px;
+        border-radius: 200px;
+        position: absolute;
+        background-color:var(--5th--color) ;
+        margin: 1px;
+        transition: .2s;
+    }
+
+    .check3:checked + .cone3::before {
+          transform: translateX(11px);
+    }
+
+
+    .check3:checked + .cone3 {
+        background-color: var(--8th--color);
+    }
+
+
+    /*******4th bx********/
+
+    .cone4 {
+        width: 23px;
+        height: 12px;
+        background-color: var(--4th--color);
+        border-radius: 30px;
+        margin: 0;
+        position: absolute;
+        display: inline-block;
+        padding: 1px;
+     
+        transition: .2s;
+    }
+
+    .cone4::before {
+        content:'';
+        width: 10px;
+        height: 10px;
+        border-radius: 200px;
+        position: absolute;
+        background-color:var(--5th--color);
+        margin: 1px;
+        transition: .2s;
+    }
+
+    .check4:checked + .cone4::before {
+          transform: translateX(11px);
+    }
+
+
+    .check4:checked + .cone4 {
+        background-color: var(--8th--color);
+    }
+
+
+    /*******5th bx********/
+
+
+    
+    .cone5 {
+        width: 23px;
+        height: 12px;
+        background-color: var(--4th--color);
+        border-radius: 30px;
+        margin: 0;
+        position: absolute;
+        display: inline-block;
+        padding: 1px;
+     
+        transition: .2s;
+    }
+
+    .cone5::before {
+        content:'';
+        width: 10px;
+        height: 10px;
+        border-radius: 200px;
+        position: absolute;
+        background-color:var(--5th--color) ;
+        margin: 1px;
+        transition: .2s;
+    }
+
+    .check5:checked + .cone5::before {
+          transform: translateX(11px);
+    }
+
+
+    .check5:checked + .cone5 {
+        background-color:var(--8th--color);
+    }
+
+
+    
+    /*******6th bx********/
+
+      .cone6 {
+        width: 23px;
+        height: 12px;
+        background-color: var(--4th--color);
+        border-radius: 30px;
+        margin: 0;
+        position: absolute;
+        display: inline-block;
+        padding: 1px;
+     
+        transition: .2s;
+    }
+
+    .cone6::before {
+        content:'';
+        width: 10px;
+        height: 10px;
+        border-radius: 200px;
+        position: absolute;
+        background-color:var(--5th--color) ;
+        margin: 1px;
+        transition: .2s;
+    }
+
+    .check6:checked + .cone6::before {
+          transform: translateX(11px);
+    }
+
+
+    .check6:checked + .cone6 {
+        background-color: var(--8th--color);
+    }
+
+
+
+    /*******7th bx********/
+
+    .cone7 {
+        width: 23px;
+        height: 12px;
+        background-color: var(--4th--color);
+        border-radius: 30px;
+        margin: 0;
+        position: absolute;
+        display: inline-block;
+        padding: 1px;
+     
+        transition: .2s;
+    }
+
+    .cone7::before {
+        content:'';
+        width: 10px;
+        height: 10px;
+        border-radius: 200px;
+        position: absolute;
+        background-color:var(--5th--color) ;
+        margin: 1px;
+        transition: .2s;
+    }
+
+    .check7:checked + .cone7::before {
+          transform: translateX(11px);
+    }
+
+
+    .check7:checked + .cone7 {
+        background-color: var(--8th--color);
+    }
+
+
+
+    /*******8th bx********/
+
+     .cone8 {
+        width: 23px;
+        height: 12px;
+        background-color: var(--4th--color);
+        border-radius: 30px;
+        margin: 0;
+        position: absolute;
+        display: inline-block;
+        padding: 1px;
+     
+        transition: .2s;
+    }
+
+    .cone8::before {
+        content:'';
+        width: 10px;
+        height: 10px;
+        border-radius: 200px;
+        position: absolute;
+        background-color:var(--5th--color);
+        margin: 1px;
+        transition: .2s;
+    }
+
+    .check8:checked + .cone8::before {
+          transform: translateX(11px);
+    }
+
+
+    .check8:checked + .cone8 {
+        background-color: var(--8th--color);
+    }
+
+
+       /*******9th bx********/
+
+       .cone9 {
+        width: 23px;
+        height: 12px;
+        background-color: var(--4th--color);
+        border-radius: 30px;
+        margin: 0;
+        position: absolute;
+        display: inline-block;
+        padding: 1px;
+     
+        transition: .2s;
+    }
+
+    .cone9::before {
+        content:'';
+        width: 10px;
+        height: 10px;
+        border-radius: 200px;
+        position: absolute;
+        background-color:var(--5th--color) ;
+        margin: 1px;
+        transition: .2s;
+    }
+
+    .check9:checked + .cone9::before {
+          transform: translateX(11px);
+    }
+
+
+    .check8:checked + .cone9 {
+        background-color: var(--8th--color);
+    }
+
+
+
+       /*******10th bx********/
+     
+       .cone10 {
+        width: 23px;
+        height: 12px;
+        background-color: var(--4th--color);
+        border-radius: 30px;
+        margin: 0;
+        position: absolute;
+        display: inline-block;
+        padding: 1px;
+     
+        transition: .2s;
+    }
+
+    .cone10::before {
+        content:'';
+        width: 10px;
+        height: 10px;
+        border-radius: 200px;
+        position: absolute;
+        background-color:var(--5th--color) ;
+        margin: 1px;
+        transition: .2s;
+    }
+
+    .check10:checked + .cone10::before {
+          transform: translateX(11px);
+    }
+
+
+    .check10:checked + .cone10 {
+        background-color: var(--8th--color);
+    }
+
+
+    /*******11th bx********/
+
+    .cone11 {
+        width: 23px;
+        height: 12px;
+        background-color: var(--4th--color);
+        border-radius: 30px;
+        margin: 0;
+        position: absolute;
+        display: inline-block;
+        padding: 1px;
+     
+        transition: .2s;
+    }
+
+    .cone11::before {
+        content:'';
+        width: 10px;
+        height: 10px;
+        border-radius: 200px;
+        position: absolute;
+        background-color:var(--5th--color) ;
+        margin: 1px;
+        transition: .2s;
+    }
+
+    .check11:checked + .cone11::before {
+          transform: translateX(11px);
+    }
+
+
+    .check11:checked + .cone11 {
+        background-color: var(--8th--color);
+    }
+
+
+        /*******12th bx********/
+
+         .cone12 {
+        width: 23px;
+        height: 12px;
+        background-color: var(--4th--color);
+        border-radius: 30px;
+        margin: 0;
+        position: absolute;
+        display: inline-block;
+        padding: 1px;
+     
+        transition: .2s;
+    }
+
+    .cone12::before {
+        content:'';
+        width: 10px;
+        height: 10px;
+        border-radius: 200px;
+        position: absolute;
+        background-color:var(--5th--color) ;
+        margin: 1px;
+        transition: .2s;
+    }
+
+    .check12:checked + .cone12::before {
+          transform: translateX(11px);
+    }
+
+
+    .check12:checked + .cone12 {
+        background-color: var(--8th--color);
+    }
+
+
+
+
+           @media (width<375px) {
+
+         body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+
+        .container {
+            margin:0 3%;
+            padding: 10px;
+        
+        
+            
+        }
+
+        .extension {
+            justify-content: space-between;
+            margin: 0;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            width: 98%;
+            margin-right: 30px;
+            gap: 0;
+        }
+
+        .extension .mage {
+            width: 140px;
+        }
+
+      
+
+        .boxes {
+          grid-template-columns: 75vw;
+          grid-template-rows: 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px;
+          margin: 0;
+          padding: 0;
+          width: 98%;
+        }
+
+        .list {
+            margin: 0;
+            width: 98%;
+            flex-direction: column;
+            gap: 0;
+
+        }
+
+        .list h1 {
+            margin-bottom: 10px;
+        }
+
+        .buttons button {
+            padding: 12px 20px;
+            margin-right: 0;
+            font-size: 17px;
+        }
+
+            .buttons {
+              display: flex;
+              gap: 5px;
+              margin-bottom: 15px;
+              margin-left: 15px;
+            }
+
+             .switch {
+                gap: 65%;
+             }
+
+
+             .box {
+                gap:38%;
+                padding: 0 15px;
+             }
+
+
+             .text p {
+                font-size: 10px;
+             }
+
+               .text h1 {
+                font-size: 1.2rem;
+               }
+
+
+               
+       .box7 {
+       gap: 38%;
+      }   
+
+          
+     .box7 .text p {
+        font-size: 9px;
+       }
+
+
+
+       
+               
+    }
+
+
+
+    @media (min-width:375px) and (max-width:480px) {
+
+     
+         body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+
+
+
+        .container {
+            margin:0 3%;
+            padding: 10px;
+        
+        
+            
+        }
+
+        .extension {
+            justify-content: space-between;
+            margin: 0;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            width: 98%;
+            margin-right: 30px;
+            gap: 0;
+        }
+
+        .extension .mage {
+            width: 140px;
+        }
+
+      
+
+        .boxes {
+          grid-template-columns: 75vw;
+          grid-template-rows: 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px 180px;
+          margin: 0;
+          padding: 0;
+          width: 98%;
+        }
+
+        .list {
+            margin: 0;
+            width: 98%;
+            flex-direction: column;
+            gap: 0;
+
+        }
+
+        .list h1 {
+            margin-bottom: 10px;
+        }
+
+        .buttons button {
+            padding: 12px 20px;
+            margin-right: 0;
+            font-size: 17px;
+        }
+
+            .buttons {
+              display: flex;
+              gap: 5px;
+              margin-bottom: 15px;
+              margin-left: 15px;
+            }
+
+             .switch {
+                gap: 65%;
+             }
+
+
+             .box {
+                gap:38%;
+                padding: 0 15px;
+             }
+
+
+             .text p {
+                font-size: 10px;
+             }
+
+               .text h1 {
+                font-size: 1.2rem;
+               }
+
+
+               
+       .box7 {
+       gap: 38%;
+      }   
+
+          
+     .box7 .text p {
+        font-size: 9px;
+       }
+
+
+
+               
+    }
+
+    @media (min-width:480px) and (max-width:767px) {
+     
+
+        
+         body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+
+        .container {
+            margin:0 3%;
+            padding: 10px;
+        
+        
+            
+        }
+
+        .extension {
+            justify-content: space-between;
+            margin: 0;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            width: 98%;
+            margin-right: 30px;
+            gap: 0;
+        }
+
+        .extension .mage {
+            width: 140px;
+        }
+
+      
+
+        .boxes {
+          grid-template-columns: 75vw;
+          grid-template-rows: 190px 190px 190px 190px 190px 190px 190px 190px 190px 190px 190px 190px;
+          margin: 0;
+          padding: 0;
+          width: 98%;
+        }
+
+        .list {
+            margin: 0;
+            width: 98%;
+            flex-direction: column;
+            gap: 0;
+
+        }
+
+        .list h1 {
+            margin-bottom: 10px;
+        }
+
+        .buttons button {
+            padding: 12px 20px;
+            margin-right: 0;
+            font-size: 17px;
+        }
+
+            .buttons {
+              display: flex;
+              gap: 5px;
+              margin-bottom: 15px;
+              margin-left: 15px;
+            }
+
+             .switch {
+                gap: 65%;
+             }
+
+
+             .box {
+                gap:35%;
+                padding: 0 15px;
+             }
+
+
+             .text p {
+                font-size: 13px;
+             }
+
+               .text h1 {
+                font-size: 1.3rem;
+               }
+
+
+               
+       .box7 {
+       gap: 35%;
+      }   
+
+
+      .box11 {
+        gap: 40%;
+      }
+
+          
+     .box7 .text p {
+        font-size: 12px;
+       }
+
+
+
+
+    }
+
+
+    @media (min-width:768px) and (max-width:1410px) {
+
+    
+         body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+
+           .container {
+            margin:0 2% 3% 3%;
+            padding: 15px;
+        
+        }
+
+        .extension {
+            justify-content: space-between;
+            margin: 0;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            width: 98%;
+            margin-right: 30px;
+            gap: 0;
+        }
+
+        .extension .mage {
+            width: 145px;
+        }
+
+      
+
+        .boxes {
+          grid-template-columns: 45vw 45vw;
+          grid-template-rows: 190px 190px 190px 190px 190px 190px;
+          margin: 0;
+          padding: 0;
+          width: 80%;
+          gap: 15px;
+        }
+
+        .list {
+            margin: 0;
+            width: 98%;
+            flex-direction: column;
+            gap: 0;
+            margin-bottom: 20px;
+        }
+
+        .list h1 {
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+        }
+
+        .buttons button {
+            padding: 15px 30px;
+            margin-right: 0;
+            font-size: 25px;
+        }
+
+            .buttons {
+              display: flex;
+              gap: 5px;
+              margin-bottom: 15px;
+              margin-left: 15px;
+            }
+
+             .switch {
+                gap:75%;
+             }
+
+
+             .box {
+                gap:32%;
+                padding: 0 15px;
+             }
+
+
+             .text p {
+                font-size: 15px;
+             }
+
+               .text h1 {
+                font-size: 1.3rem;
+               }
+
+
+               
+       .box7 {
+       gap: 32%;
+      }   
+
+
+      .box11 {
+        gap: 33%;
+      }
+
+          
+     .box7 .text p {
+        font-size: 13px;
+       }
+
+
+
+
+    
+
+    }
